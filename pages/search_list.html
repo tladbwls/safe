@@ -9,7 +9,7 @@
   <!-- Remix Icon -->
   <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
   <!-- Main Css Link -->
-  <link rel="stylesheet" href="/css/style.css">
+  <link rel="stylesheet" href="../css/style.css">
 
 </head>
 <body>
@@ -17,13 +17,16 @@
   <div class="wrapper">
     <header class="border-bottom">
       <div class="center border-side">
-        <div class="logo"><a href="/ev_charge/index.html" title="EV">EV</a></div>
-        <div class="home"><a href="/ev_charge/index.html" title="홈"><i class="ri-home-3-fill"></i></a></div>
+        <div class="hamburger"><a href="" title="메뉴 바로가기"><i class="ri-menu-line"></i></a></div>
+        <div class="logo"><a href="" title="안심이">서울특별시 안심이</a></div>
+        <div class="back"><a href="" title="뒤로가기"><i class="ri-arrow-go-back-line"></i></a></div>
       </div>
+      
     </header>
-
+    
     <!-- section -->
     <section class="map-sec">
+      <div class="center location">현 위치 : 서울시 강남구</div>
       <div class="center border-side">
       <div class="map" id="map"></div>
     </div>
@@ -89,17 +92,29 @@
     </section>
 
     <!-- Fotter -->
-    <footer class="border-top">
+    <!-- <footer class="border-top">
       <div class="center border-side">
         <p>&copy; Copyright 2013</p>
        <p>Powered by MongProject</p>
        <p>Developed By Marshall</p>
       </div>
-    </footer>
+    </footer> -->
 
-    <div class="loading-wrapper">
+    <!-- <div class="loading-wrapper">
       <div class="loading-spinner"></div>
-    </div>
+    </div> -->
   </div>
 </body>
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=141e99f50c74579a8fa80f338e3c6552"></script>
+<script>
+var container = document.getElementById("map"); //지도를 담을 영역의 DOM 레퍼런스
+var options = {
+  //지도를 생성할 때 필요한 기본 옵션
+  center: new kakao.maps.LatLng(33.450701, 126.570667), //지도의 중심좌표.
+  level: 3, //지도의 레벨(확대, 축소 정도)
+};
+
+var map = new kakao.maps.Map(container, options); //지도 생성 및 객체 리턴
+</script>
+
 </html>

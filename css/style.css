@@ -27,6 +27,7 @@ header .logo a{color:rgb(224, 228, 228); font-weight:bold; font-size:1.1rem;}
 header .back a{font-size:1rem; color:rgb(224, 228, 228);}
 header .hamburger a {font-size: 1rem; color: rgb(224, 228, 228);}
 
+
 /* Slogan Section Style */
 section{padding:0 0.5rem;}
 section.slogan-sec .center{padding:6rem .75rem;}
@@ -47,12 +48,13 @@ section.bar-sec .near-btns button{width:100%; border:none; padding:.75rem; borde
 section.bar-sec .near-btns em{font-style:normal;}
 
 /* Footer Style */
-footer{position:fixed; bottom:0; left:0; padding:0 0.5rem; width:100%; z-index: 10; background: rgb(34, 36, 41);}
-footer .center{text-align:center; padding:1rem;}
+/* footer{position:fixed; bottom:0; left:0; padding:0 0.5rem; width:100%; z-index: 10; background: rgb(34, 36, 41);}
+footer .center{text-align:center; padding:1rem;} */
 
 /* Map Section Style */
 #map{width: 100%; height: 100vh;}
 .marker-info {color: white; border: 0; font-size: 12px; text-align: center; width: 100%; font-family: 'Noto Sans KR'; padding-top: .25rem;}
+.map-sec .location {width: 100%; height: auto; padding: .5rem; text-align: center; background: rgb(120, 125, 119);}
 
 /* Map Lists Style */
 .map-lists{position:fixed; width:100%; height:auto; z-index: 10;}
